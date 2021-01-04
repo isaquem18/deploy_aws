@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
   return res.json({pagina: 'server is running on aws'});
 });
 
-app.listen(443);
+app.listen(3000);
