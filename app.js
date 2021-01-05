@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -7,4 +8,4 @@ app.get('/', (req, res) => {
   return res.json({pagina: 'server is running on aws'});
 });
 
-app.listen(3000);
+app.listen(port, () => console.log('server started'));
